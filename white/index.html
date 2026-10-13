@@ -2,52 +2,52 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Conta10</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Calibri, Arial, sans-serif;background:#f4f5f7;color:#455a64;line-height:1.6}
-header{background:#ffffff;border-bottom:3px solid #37474f;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
-header h1{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1rem;font-weight:900;color:#263238;letter-spacing:.02em}
+body{font-family:Arial, sans-serif;background:#fafafa;color:#444;line-height:1.6}
+header{background:#ffffff;border-bottom:3px solid #c0392b;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
+header h1{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:900;color:#1a1a1a;letter-spacing:.02em}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#37474f;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
-nav a:hover{color:#263238}
+nav a{color:#c0392b;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+nav a:hover{color:#922b21}
 .hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
-.hero-left{background:#f4f5f7;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
-.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#37474f;text-transform:uppercase;font-weight:700;margin-bottom:16px}
-.hero-left h2{font-family:Calibri, 'Gill Sans', sans-serif;font-size:2.6rem;font-weight:900;color:#263238;line-height:1.15;margin-bottom:20px}
-.hero-left h2 em{color:#37474f;font-style:normal}
-.hero-left p{color:#455a64;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
-.hero-cta{display:inline-block;background:#37474f;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
-.hero-cta:hover{background:#263238}
-.hero-right{background:#37474f;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
-.hero-right h3{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.hero-left{background:#fafafa;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#c0392b;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hero-left h2{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:2.6rem;font-weight:900;color:#1a1a1a;line-height:1.15;margin-bottom:20px}
+.hero-left h2 em{color:#c0392b;font-style:normal}
+.hero-left p{color:#444;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero-cta{display:inline-block;background:#c0392b;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#922b21}
+.hero-right{background:#c0392b;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.hero-right h3{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
 .info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
 .info-item:last-child{border-bottom:none;padding-bottom:0}
 .info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
 .info-value{font-size:1rem;font-weight:600}
 .section{max-width:960px;margin:72px auto;padding:0 40px}
-.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#37474f;font-weight:700;margin-bottom:12px}
-.section h2{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1.7rem;font-weight:900;color:#263238;margin-bottom:40px}
-.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #eceff1}
+.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#c0392b;font-weight:700;margin-bottom:12px}
+.section h2{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1.7rem;font-weight:900;color:#1a1a1a;margin-bottom:40px}
+.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #fadbd8}
 .srv-row:last-child{border-bottom:none}
-.srv-num{font-family:Calibri, 'Gill Sans', sans-serif;font-size:2rem;font-weight:900;color:#37474f;opacity:.3;min-width:56px;line-height:1}
-.srv-body h4{font-family:Calibri, 'Gill Sans', sans-serif;font-size:1rem;font-weight:700;color:#263238;margin-bottom:6px}
-.srv-body p{font-size:.9rem;color:#455a64;line-height:1.65}
+.srv-num{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:2rem;font-weight:900;color:#c0392b;opacity:.3;min-width:56px;line-height:1}
+.srv-body h4{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:6px}
+.srv-body p{font-size:.9rem;color:#444;line-height:1.65}
 .sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
-.sobre-text p{color:#455a64;line-height:1.85;margin-bottom:16px}
-.stats-panel{background:#eceff1;border-left:4px solid #37474f;padding:28px}
-.stats-panel p{font-size:.88rem;color:#455a64;margin-bottom:10px;line-height:1.5}
-.stats-panel p strong{color:#263238;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
-.contato-box{background:#eceff1;border-left:4px solid #37474f;padding:32px;max-width:560px}
-.contato-box p{font-size:.95rem;color:#455a64;margin-bottom:12px;line-height:1.6}
-.contato-box a{color:#37474f;text-decoration:none;font-weight:600}
-footer{background:#263238;color:#78909c;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
+.sobre-text p{color:#444;line-height:1.85;margin-bottom:16px}
+.stats-panel{background:#fadbd8;border-left:4px solid #c0392b;padding:28px}
+.stats-panel p{font-size:.88rem;color:#444;margin-bottom:10px;line-height:1.5}
+.stats-panel p strong{color:#922b21;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.contato-box{background:#fadbd8;border-left:4px solid #c0392b;padding:32px;max-width:560px}
+.contato-box p{font-size:.95rem;color:#444;margin-bottom:12px;line-height:1.6}
+.contato-box a{color:#c0392b;text-decoration:none;font-weight:600}
+footer{background:#1a1a1a;color:#888;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
 @media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
 </style></head><body>
 <header><h1>Conta10</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
   <div class="hero-left">
-    <p class="hero-eyebrow">Administração · Eficiência · Resultados</p>
-    <h2>Sua empresa merece <em>suporte administrativo</em> de <em>excelência</em></h2>
-    <p>A Conta10 oferece serviços combinados de escritório e apoio administrativo para empresas que buscam otimizar operações e reduzir custos. Somos especialistas em Belo Horizonte, entregando soluções personalizadas que permitem que você se concentre no seu core business.</p>
-    <a href="#contato" class="hero-cta">Agendar reunião</a>
+    <p class="hero-eyebrow">Administração · Eficiência · Apoio Empresarial</p>
+    <h2>Sua empresa merece <em>apoio administrativo</em> de <em>excelência</em></h2>
+    <p>A Conta10 oferece serviços combinados de escritório e apoio administrativo para empresas que buscam otimizar suas operações. Com soluções personalizadas, ajudamos negócios em Belo Horizonte a focar no que realmente importa.</p>
+    <a href="#contato" class="hero-cta">Solicitar atendimento</a>
   </div>
   <div class="hero-right">
     <h3>Conta10</h3>
@@ -57,10 +57,10 @@ footer{background:#263238;color:#78909c;padding:28px 40px;display:flex;justify-c
     <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">59.824.166/0001-75</div></div>
   </div>
 </div>
-<div id="servicos" class="section"><p class="section-label">Competências</p><h2>Onde podemos ajudar</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Gestão Administrativa</h4><p>Organização completa de processos administrativos para aumentar a produtividade da sua equipe.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Suporte de Escritório</h4><p>Atendimento telefônico, agendamento e gerenciamento de documentos com profissionalismo.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Assessoria Empresarial</h4><p>Consultoria em procedimentos e otimização de rotinas para melhor performance organizacional.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Outsourcing de Serviços</h4><p>Terceirização estratégica de atividades para reduzir despesas operacionais e ganhar flexibilidade.</p></div></div></div>
-<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Quem somos</h2>
+<div id="servicos" class="section"><p class="section-label">Soluções</p><h2>O que entregamos</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Gestão Administrativa</h4><p>Organização completa de processos administrativos para aumentar a produtividade da sua empresa.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Suporte de Escritório</h4><p>Atendimento profissional, gestão de documentos e apoio operacional para o dia a dia corporativo.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Consultoria de Processos</h4><p>Análise e otimização de fluxos administrativos para reduzir custos e melhorar eficiência.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Outsourcing Administrativo</h4><p>Delegue suas demandas administrativas e concentre-se no crescimento do seu negócio.</p></div></div></div>
+<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Sobre nós</h2>
 <div class="sobre-grid">
-  <div class="sobre-text"><p>A Conta10 é uma empresa de serviços administrativos localizada em Belo Horizonte, dedicada a apoiar negócios de todos os tamanhos. Com uma equipe preparada e processos eficientes, garantimos que sua empresa funcione como um relógio, sem sobrecarregar seu time interno.</p><p>Nosso diferencial está na atenção aos detalhes, na flexibilidade de soluções e no compromisso com resultados mensuráveis. Trabalhamos para reduzir custos operacionais mantendo a qualidade dos serviços em um padrão elevado.</p></div>
+  <div class="sobre-text"><p>A Conta10 é uma empresa especializada em serviços combinados de escritório e apoio administrativo, localizada em Belo Horizonte. Desde sua fundação, oferecemos soluções que transformam a gestão administrativa de pequenas e médias empresas, contribuindo para o sucesso operacional de nossos clientes.</p><p>Nossa equipe é composta por profissionais experientes e comprometidos com a excelência. Entendemos os desafios únicos de cada negócio e oferecemos serviços flexíveis e personalizados que geram resultados reais, economia de tempo e redução de custos administrativos.</p></div>
   <div class="stats-panel">
     <p><strong>Razão Social</strong>Conta10 Gestao Financeira Ltda</p>
     <p><strong>CNPJ</strong>59.824.166/0001-75</p>
@@ -68,9 +68,9 @@ footer{background:#263238;color:#78909c;padding:28px 40px;display:flex;justify-c
     <p><strong>Situação</strong>✅ Ativa</p>
   </div>
 </div></div>
-<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Contato</h2>
+<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Entre em contato</h2>
 <div class="contato-box">
-  <p>Entre em contato e saiba como podemos apoiar o seu negócio.</p>
+  <p>Nosso time responde rapidamente. Envie sua mensagem.</p>
   <p><strong>Telefone:</strong> <a href="tel:+556199222295">(61) 9922-2295</a></p><p><strong>Endereço:</strong> R. Cristiano Machado, 1648, Cidade Nova, Belo Horizonte — MG, CEP 31170-024</p>
 </div></div>
 <footer><span>Conta10 — CNPJ 59.824.166/0001-75</span><span>© 2025–2026 Conta10 Gestao Financeira Ltda</span></footer>
